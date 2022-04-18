@@ -32,7 +32,7 @@ struct CalendarView: View {
     }
 }
 
-struct CalendarScreen_Previews: PreviewProvider {
+struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
         CalendarView()
     }

@@ -49,7 +49,7 @@ extension Color {
     }
 }
 
-struct MainScreen_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }
