@@ -15,7 +15,7 @@
 		5EF7FDF7280BC95800ADFAAA /* SwiftUi_Training_02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FDF6280BC95800ADFAAA /* SwiftUi_Training_02Tests.swift */; };
 		5EF7FE01280BC95800ADFAAA /* SwiftUi_Training_02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE00280BC95800ADFAAA /* SwiftUi_Training_02UITests.swift */; };
 		5EF7FE03280BC95800ADFAAA /* SwiftUi_Training_02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE02280BC95800ADFAAA /* SwiftUi_Training_02UITestsLaunchTests.swift */; };
-		5EF7FE10280BC9C700ADFAAA /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE0F280BC9C700ADFAAA /* MainScreen.swift */; };
+		5EF7FE10280BC9C700ADFAAA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE0F280BC9C700ADFAAA /* MainView.swift */; };
 		5EF7FE12280BD31200ADFAAA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE11280BD31200ADFAAA /* CalendarView.swift */; };
 		5EF7FE14280BD35000ADFAAA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE13280BD35000ADFAAA /* NotificationView.swift */; };
 		5EF7FE16280C11A300ADFAAA /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE15280C11A300ADFAAA /* CalendarViewModel.swift */; };
@@ -50,7 +50,7 @@
 		5EF7FDFC280BC95800ADFAAA /* SwiftUi_Training_02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUi_Training_02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF7FE00280BC95800ADFAAA /* SwiftUi_Training_02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_Training_02UITests.swift; sourceTree = "<group>"; };
 		5EF7FE02280BC95800ADFAAA /* SwiftUi_Training_02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_Training_02UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5EF7FE0F280BC9C700ADFAAA /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		5EF7FE0F280BC9C700ADFAAA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5EF7FE11280BD31200ADFAAA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		5EF7FE13280BD35000ADFAAA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		5EF7FE15280C11A300ADFAAA /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			children = (
 				5EF7FDE5280BC95700ADFAAA /* SwiftUi_Training_02App.swift */,
 				5EF7FDE7280BC95700ADFAAA /* ContentView.swift */,
-				5EF7FE0F280BC9C700ADFAAA /* MainScreen.swift */,
+				5EF7FE0F280BC9C700ADFAAA /* MainView.swift */,
 				5EF7FE15280C11A300ADFAAA /* CalendarViewModel.swift */,
 				5EF7FE11280BD31200ADFAAA /* CalendarView.swift */,
 				5EEE539A280D483B00C1EB69 /* NotificationViewModel.swift */,
@@ -273,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EF7FE16280C11A300ADFAAA /* CalendarViewModel.swift in Sources */,
-				5EF7FE10280BC9C700ADFAAA /* MainScreen.swift in Sources */,
+				5EF7FE10280BC9C700ADFAAA /* MainView.swift in Sources */,
 				5EF7FE12280BD31200ADFAAA /* CalendarView.swift in Sources */,
 				5EEE539B280D483B00C1EB69 /* NotificationViewModel.swift in Sources */,
 				5EF7FDE8280BC95700ADFAAA /* ContentView.swift in Sources */,

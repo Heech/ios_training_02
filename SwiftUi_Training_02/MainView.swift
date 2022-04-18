@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainScreen: View {
+struct MainView: View {
     
     enum TabItems {
         case calendar, notification
@@ -31,6 +31,7 @@ struct MainScreen: View {
                     let image = selectedTab == TabItems.notification ? "bell_icon_on" : "bell_icon_off"
                     Label("通知", image: image)
                 }
+                .badge(2)
                 .tag(TabItems.notification)
         }
         // color of selected tab item's text
@@ -50,6 +51,6 @@ extension Color {
 
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MainScreen()
+        MainView()
     }
 }
