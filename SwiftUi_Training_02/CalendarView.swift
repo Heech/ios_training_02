@@ -21,17 +21,49 @@ struct CalendarView: View {
     }
 
     var body: some View {
-        VStack (alignment: .leading) {
-            // hidden RegistrationView navigation link
-            NavigationLink(destination: RegistrationView(), isActive: $isShowingRegistrationView) { EmptyView() }
+        VStack {
+            VStack (alignment: .leading) {
+                // hidden RegistrationView navigation link
+                NavigationLink(destination: RegistrationView(), isActive: $isShowingRegistrationView) { EmptyView() }
+                
+                Text(viewModel.title)
+                
+                Text("count: \(viewModel.count)")
+                Button(action: {
+                    viewModel.increaseCount()
+                }) {
+                    Text("increase count")
+                }
+            }.border(Color.red)
+            .frame(width: 200, height: 200)
             
-            Text(viewModel.title)
+            Spacer()
             
-            Text("count: \(viewModel.count)")
-            Button(action: {
-                viewModel.increaseCount()
-            }) {
-                Text("increase count")
+            ScrollView {
+                PlanItem(
+                    time: "12:00~13:00",
+                    companyName: "Company name",
+                    description: "description long text here very very long and should not show more than one line"
+                )
+                
+                PlanItem(
+                    time: "12:00~13:00",
+                    companyName: "Company name",
+                    description: "description long text here very very long and should not show more than one line"
+                )
+                
+                PlanItem(
+                    time: "12:00~13:00",
+                    companyName: "Company name",
+                    description: "description long text here very very long and should not show more than one line"
+                )
+                
+                PlanItem(
+                    time: "12:00~13:00",
+                    companyName: "Company name",
+                    description: "description long text here very very long and should not show more than one line"
+                )
+
             }
         }
         .floatingActionButton(
@@ -39,7 +71,34 @@ struct CalendarView: View {
             image: Image(systemName: "plus")
                 .foregroundColor(.white)) {
             isShowingRegistrationView = true
+            }
+            
+    }
+}
+
+struct PlanItem: View {
+    let time: String
+    let companyName: String
+    let description: String
+    
+    var body: some View {
+        HStack {
+            VStack (alignment: .leading) {
+                Text(time)
+                    .font(.subheadline)
+                Text(companyName)
+                    .bold()
+                Text(description)
+                    .lineLimit(1)
+            }
+            
+            Spacer()
+            
+            Image(systemName: "chevron.forward")
         }
+        .padding(.leading, 8)
+        .padding(.trailing, 8)
+        .padding(.bottom, 8)
     }
 }
 
