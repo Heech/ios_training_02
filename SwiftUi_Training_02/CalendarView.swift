@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @State private var isShowingRegistrationView = false
+    
     @StateObject private var viewModel : CalendarViewModel
 //    @ObservedObject private var viewModel : CalendarViewModel
     
@@ -20,6 +22,9 @@ struct CalendarView: View {
 
     var body: some View {
         VStack (alignment: .leading) {
+            // hidden RegistrationView navigation link
+            NavigationLink(destination: RegistrationView(), isActive: $isShowingRegistrationView) { EmptyView() }
+            
             Text(viewModel.title)
             
             Text("count: \(viewModel.count)")
@@ -28,6 +33,12 @@ struct CalendarView: View {
             }) {
                 Text("increase count")
             }
+        }
+        .floatingActionButton(
+            color: Color(hex: 0x3AD6B2),
+            image: Image(systemName: "plus")
+                .foregroundColor(.white)) {
+            isShowingRegistrationView = true
         }
     }
 }

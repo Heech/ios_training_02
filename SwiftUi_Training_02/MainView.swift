@@ -9,6 +9,13 @@ import SwiftUI
 
 struct MainView: View {
     
+    @StateObject private var viewModel : ViewModel
+    
+    init() {
+        self._viewModel = StateObject(wrappedValue: ViewModel())
+        
+    }
+    
     enum TabItems {
         case calendar, notification
     }
@@ -24,6 +31,7 @@ struct MainView: View {
                         
                 }
                 .tag(TabItems.calendar)
+                
             // TODO: trying to add top border to tabItem, but doesn't seem to be supported, have to create a custom TabView?
             
             NotificationView()
@@ -31,12 +39,13 @@ struct MainView: View {
                     let image = selectedTab == TabItems.notification ? "bell_icon_on" : "bell_icon_off"
                     Label("通知", image: image)
                 }
-                .badge(2)
+                .badge(viewModel.unreadNotificationCount)
                 .tag(TabItems.notification)
         }
         // color of selected tab item's text
         .accentColor(Color(hex: 0x3AD6B2))
         .navigationTitle("Main Screen")
+        
     }
 }
 

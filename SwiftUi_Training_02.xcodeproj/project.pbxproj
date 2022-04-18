@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5EEE539B280D483B00C1EB69 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE539A280D483B00C1EB69 /* NotificationViewModel.swift */; };
+		5EEE539D280D5BD400C1EB69 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE539C280D5BD400C1EB69 /* MainViewModel.swift */; };
+		5EEE539F280D725B00C1EB69 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE539E280D725B00C1EB69 /* FloatingActionButton.swift */; };
+		5EEE53A1280D794F00C1EB69 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE53A0280D794F00C1EB69 /* RegistrationView.swift */; };
 		5EF7FDE6280BC95700ADFAAA /* SwiftUi_Training_02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FDE5280BC95700ADFAAA /* SwiftUi_Training_02App.swift */; };
 		5EF7FDE8280BC95700ADFAAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FDE7280BC95700ADFAAA /* ContentView.swift */; };
 		5EF7FDEA280BC95800ADFAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF7FDE9280BC95800ADFAAA /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		5EEE539A280D483B00C1EB69 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		5EEE539C280D5BD400C1EB69 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5EEE539E280D725B00C1EB69 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		5EEE53A0280D794F00C1EB69 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		5EF7FDE2280BC95700ADFAAA /* SwiftUi_Training_02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUi_Training_02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF7FDE5280BC95700ADFAAA /* SwiftUi_Training_02App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_Training_02App.swift; sourceTree = "<group>"; };
 		5EF7FDE7280BC95700ADFAAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,10 +112,13 @@
 			children = (
 				5EF7FDE5280BC95700ADFAAA /* SwiftUi_Training_02App.swift */,
 				5EF7FDE7280BC95700ADFAAA /* ContentView.swift */,
+				5EEE539E280D725B00C1EB69 /* FloatingActionButton.swift */,
 				5EF7FE0F280BC9C700ADFAAA /* MainView.swift */,
+				5EEE53A0280D794F00C1EB69 /* RegistrationView.swift */,
 				5EF7FE15280C11A300ADFAAA /* CalendarViewModel.swift */,
 				5EF7FE11280BD31200ADFAAA /* CalendarView.swift */,
 				5EEE539A280D483B00C1EB69 /* NotificationViewModel.swift */,
+				5EEE539C280D5BD400C1EB69 /* MainViewModel.swift */,
 				5EF7FE13280BD35000ADFAAA /* NotificationView.swift */,
 				5EF7FDE9280BC95800ADFAAA /* Assets.xcassets */,
 				5EF7FDEB280BC95800ADFAAA /* Preview Content */,
@@ -279,6 +288,9 @@
 				5EF7FDE8280BC95700ADFAAA /* ContentView.swift in Sources */,
 				5EF7FE14280BD35000ADFAAA /* NotificationView.swift in Sources */,
 				5EF7FDE6280BC95700ADFAAA /* SwiftUi_Training_02App.swift in Sources */,
+				5EEE539F280D725B00C1EB69 /* FloatingActionButton.swift in Sources */,
+				5EEE539D280D5BD400C1EB69 /* MainViewModel.swift in Sources */,
+				5EEE53A1280D794F00C1EB69 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
